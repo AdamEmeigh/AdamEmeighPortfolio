@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./landing-style.css"/>
+    <title>Adam Emeigh Portfolio</title>
+</head>
+<header>
+    <h1>Adam Emeigh</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="#about">
+        <div class="arrow-down"></div>
+    </a>
+</header>
+<body>
+    <div id="about">
+        <h3>About Me</h3>
+        <p><img src="./resources/PortfolioPic.jpg" alt="Profile Picture">I have spent the last 13 years as and educator and I am now starting a new journey looking to enter the world of coding. I am working through the Codecademy Front-End Engineer path and learning everything I can along the way. I spend every evening studying and improving my coding skills and knowledge. If my experience as an educator has taught me anything, it is that we are all lifelong learners. This is just one more journey on my path as a learner, and I am looking to take these skills and start a new career.</p>
+    </div>
+    <div id="projects">
+        <h3>Projects</h3>
+        <div class="projectcards">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./resources/ingamenf.jpg" alt="Project Name" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Project Name</h1>
+                    <p>Description</p>
+                    <p>Description</p>
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./resources/ingamenf.jpg" alt="Project Name" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Project Name</h1>
+                    <p>Description</p>
+                    <p>Description</p>
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./resources/ingamenf.jpg" alt="Project Name" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Project Name</h1>
+                    <p>Description</p>
+                    <p>Description</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <h3>Skills</h3>
+            <div class="skillicons">
+                <img src="./resources/html5-brands.svg" alt="HTML">
+                <img src="./resources/css3-brands.svg" alt="CSS">
+                <img src="./resources/js-brands.svg" alt="JavaScript">
+                <img src="./resources/github-square-brands.svg" alt="GitHub">
+            </div>
+    </div>
+</body>
+<footer>
+    <div>
+        <h3 id="contact">Contact Me</h3>
+        <form action="mailto:adam.emeigh@gmail.com" method="post" enctype="multipart/form-data" name="emailform">
+            Name<br>
+            <input type="text" required><br>
+            Email<br>
+            <input type="email" required><br>
+            Message<br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Send"></input>
+        </form>
+    </div>
+</footer>
+</html>
