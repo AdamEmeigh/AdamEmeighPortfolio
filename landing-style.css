@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* border: 1px solid red;  */
+ }
+
+
+header {
+    background-image: url("./resources/landing.jpg");
+    height: 100vh;
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 100px;
+}
+
+nav ul {
+    margin-left: 0;
+    margin-right: 3%;
+    margin-top: 15%;
+}
+
+nav li {
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: underline;
+    margin: auto;
+    font-size: 20px;
+}
+
+li a {
+    color: whitesmoke;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid whitesmoke;
+    margin-left: 49%;
+    margin-top: 1%;
+    animation: bounceIn 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: translate(0px);
+    }
+    60% {
+      transform: translate(0px, -10px);
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }
+
+body {
+    background-color: grey;
+}
+
+h3 {
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+#about {
+    margin-bottom: 60px;
+}
+
+#about p {
+    float: left;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 3%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#about img {
+    float: right;
+    display: block;
+    max-width: 20%;
+    height: auto;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+#projects {
+    margin-bottom: 60px;
+}
+.projectcards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flip-card {
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+#skills {
+    padding-bottom: 60px;
+}
+
+  #skills img{
+      height: 60px;
+      width: 60px;
+  }
+
+  .skillicons {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  footer {
+    text-align: center;
+    background-color: black;
+    padding-bottom: 50px;
+    color: whitesmoke;
+  }
+
+  footer h3 {
+    padding-top: 10px;
+  }
+
+  footer input {
+    margin: 10px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  footer textarea {
+    margin: 10px;
+    width: 400px;
+    border-radius: 5px;
+  }

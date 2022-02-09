@@ -1,0 +1,35 @@
+Elements
+-Landing
+-About Me
+-Photo
+-Project Showcase
+-Skills
+-Contact
+
+Landing
+-Background img
+-Hello World/Name
+-Animated Arrow
+
+About Me
+-Bio
+
+Photo
+-Fun but perfessional Photo
+
+Project Showcase
+-3 to 4 projects
+-Animated Hover
+
+Skills
+-HTML
+-CSS
+-JS
+-Git
+
+Contact
+-Name
+-Email
+-Phone
+-Linkedin
+
