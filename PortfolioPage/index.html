@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./landing-style.css"/>
-    <script src="./events.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Adam Emeigh Portfolio</title>
 </head>
 <header>
-    <h1 id="name">Adam Emeigh</h1>
+    <div id="name">
+        <h1>Adam Emeigh</h1>
+        <script src="./events.js"></script>
+    </div>
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -81,13 +83,18 @@
 </body>
 <footer>
     <div>
-        <h3 id="contact">Contact Me</h3>
-        <form action="mailto:adam.emeigh@gmail.com" method="post" enctype="multipart/form-data" name="emailform">
-            Name<br>
-            <input type="text" required><br>
-            Email<br>
-            <input type="email" required><br>
-            Message<br>
+        <h3 id="contactForm">Contact Me</h3>
+        <form action="mailto:adam.emeigh@gmail.com" method="post">
+            <label for="contact">Name</label>
+            <br>
+            <input type="text" name='contact' id="contact" required>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="message">Message</label>
+            <br>
             <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
             <input type="submit" value="Send"></input>
         </form>

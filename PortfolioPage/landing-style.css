@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
-    /* border: 1px solid red;  */
+    /* border: 1px solid red;   */
  }
 
 
@@ -14,9 +14,13 @@ header {
     text-align: center;
 }
 
-header h1 {
+#name {
+  padding-top: 40vh;
+}
+
+#name h1 {
     text-align: center;
-    padding-top: 40vh;
+    margin-top: 40vh;
     font-size: 100px;
 }
 
